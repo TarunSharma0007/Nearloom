@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- DNS Prefetch & Preconnect -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Premium Typography: Inter (body) + Newsreader (display) + JetBrains Mono (code) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,ital,wght@6..72,0,400;6..72,0,500;6..72,0,600;6..72,1,400;6..72,1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#f0ece3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101520" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Core SEO -->
+    <title>Nearloom — Find your people, nearby.</title>
+    <meta name="description" content="Discover trusted local communities, clubs, and collectives without adding another social feed to your life. Search by interest, location, and meeting style." />
+    <meta name="author" content="Nearloom" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://nearloom.app" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nearloom — Where local life comes together" />
+    <meta property="og:description" content="Discover trusted communities, clubs, and collectives around you." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nearloom.app" />
+    <meta property="og:site_name" content="Nearloom" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nearloom — Where local life comes together" />
+    <meta name="twitter:description" content="Discover trusted communities, clubs, and collectives around you." />
+    <meta name="twitter:image" content="/og-image.png" />
+  </head>
+
+  <body>
+    <!-- No-script fallback -->
+    <noscript>
+      <div style="padding:2rem;text-align:center;font-family:system-ui">
+        <h1>Nearloom requires JavaScript</h1>
+        <p>Please enable JavaScript in your browser to use this application.</p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
